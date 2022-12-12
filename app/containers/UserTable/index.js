@@ -27,7 +27,8 @@ export default function UserTable() {
           if (user) {
             const { firstName, lastName, zipCode } = user;
             return (
-              <tr>
+              // eslint-disable-next-line react/no-array-index-key
+              <tr key={index}>
                 <td>{index}</td>
                 <td>{firstName}</td>
                 <td>{lastName}</td>
